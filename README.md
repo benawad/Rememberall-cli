@@ -1,0 +1,3 @@
+# Rememberall-cli
+
+For HackRice
