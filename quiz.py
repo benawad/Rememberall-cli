@@ -47,11 +47,15 @@ if command == "quiz":
     data = fetch_quizlet(qid)
     for c in data['cards']:
         print("Front: " + c['term'])
-        input(">")
-        print("Answer: " + c['definition'])
+        ans = input(">")
+        if c['definition'].lower() == ans.lower():
+            print("Correct: " + c['definition'])
+        else:
+            print("Incorrect: " + c['definition'])
         print()
 
     print("Nice review session!")
+
 elif command == "list":
     pass
 elif command == "help":
