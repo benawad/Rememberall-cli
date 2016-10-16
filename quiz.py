@@ -2,6 +2,15 @@ import sys
 import requests
 import json
 
+if len(sys.argv) <= 1:
+    print("""Usage: remembrall [subcommand]
+
+Subcommands:
+    search         Searches for a set to be quizzed on.
+    quiz           Starts a quiz on a specific set.
+    """)
+    exit()
+
 command = sys.argv[1]
 
 def search_quizlet(q):
