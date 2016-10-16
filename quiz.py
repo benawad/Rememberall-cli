@@ -59,7 +59,13 @@ if command == "quiz":
 elif command == "list":
     pass
 elif command == "help":
-    pass
+    print("""Usage: remembrall [subcommand]
+
+Subcommands:
+    search         Searches for a set to be quizzed on.
+    quiz           Starts a quiz on a specific set.
+    """)
+
 elif command == "stop":
     pass
 else:
